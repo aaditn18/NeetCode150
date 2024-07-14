@@ -11,6 +11,7 @@ Example 3:
 Input: strs = ["a"]
 Output: [["a"]]'''
 
+#Beats 81% in speed and memory
 
 from collections import defaultdict
 from typing import List
@@ -20,7 +21,8 @@ class Solution:
         all = defaultdict(list)
         
         for word in strs:
-            sorted_word = ''.join(sorted(word))
+            #sorted returns a list of sorted characters, join converts that into a string again
+            sorted_word = ''.join(sorted(word)) 
             all[sorted_word].append(word)
         
         return list(all.values())
