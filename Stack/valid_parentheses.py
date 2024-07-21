@@ -25,7 +25,8 @@ s consists of parentheses only '()[]{}'
 
 # Beats 68% in runtime, 40% in memory
 
-# Stack functions: .append(), .pop(), stack[-1] for top elem, len(stack) == 0 for empty check
+# Stack functions: .append(), .pop() or stack[:-1], stack[-1] for top elem, 
+# len(stack) == 0 for empty check 
 
 class Solution:
     def isValid(self, s: str) -> bool:
